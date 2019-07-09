@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>hello hexo</title>
+      <link href="/2019/07/09/hello-world/"/>
+      <url>/2019/07/09/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>!<a id="more"></a> This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">I want learn  python .talk is cheap ,show me the code</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">More info: [Writing](https://hexo.io/docs/writing.html)</span><br><span class="line"></span><br><span class="line">### Run server</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pakchoi-1&#39;s first blog 一些个人说明</title>
+      <link href="/2019/04/10/Pakchoi-1&#39;s%20first%20blog/"/>
+      <url>/2019/04/10/Pakchoi-1&#39;s%20first%20blog/</url>
+      
+        <content type="html"><![CDATA[<p>   唔。。。当初在一公众号上看到这样一篇文章 <a href>如何用hexo+github 搭建一个属于自己的博客</a></p><p>看着就激动，因为渐渐的了解IT行业发现有很多的大牛级别人物都喜欢将自己的东西分享到个人博客中，一是为了方便自己后面回来察看，二是将自己的东西分享给更多人为别人解决问题或是学习提供了一种可能，<a id="more"></a>三自然是个人会获一点利吧。当时我一激动就想建一个自己的博客，就算没有人看，我自己记录一些自己东西学习经历呀什么的也行。通过这么多年的了解也明白了IT这个行业跟其他行业不同不能够吃老本，不进则退，这是这是自然法则。</p><p>  现在来说说我建了这个博客都一个月多了为什么现在才开始写博客，那是以为懒^_^ 还有就是不明白我到底该用这个博客来干嘛，这些都还没想好，所以干脆连域名都没有去买虽热哪些“乱七八糟”“各种各样”的域名也不贵甚至说很便宜几块钱一年，但个人嫌麻烦没有弄，还有我这博客也就自己看看就没必要去花钱。</p><p>  然后呢来说说我本人和这个博客的余生，一小二本学生，专业跟IT行业沾点边算半个IT人吧，家穷，人懒，有想法，喜欢一些新奇的东西，较内向。就这么多吧 嘿嘿。这博客呢才刚开始写，就利用它来记录我的学习吧，学过一点python（python真的很有意思），现在已经到了从入门到放弃的地步了，平时专业事情比较多（可能是我找的借口）没怎么花时间来学习。希望我能用写博客来激励自己去学习。</p><p>  好呢就这么多了吧，本人并不喜欢写作，这也算是一种锻炼吧！</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一篇文章</title>
+      <link href="/2019/04/10/frist%20blog/"/>
+      <url>/2019/04/10/frist%20blog/</url>
+      
+        <content type="html"><![CDATA[<p>　　自从在一个学习 python 的公众号看到一篇利用 git＋hexo 搭建属于自己的博客后，想自己搭建有个自己的博客，在这个浩瀚如烟的网络中有一个属于自己的天地。<a id="more"></a></p><p>　　搭建博客那么久了依然没有用它发过一篇，不是不想，一是不知道用这个博客来做些什么，二是本人写作水平有限，现在想明白了，本人是非计算机专业的电子专业的一个小二本在校生，但个人爱好 python 打算用这个博客分享些 python 有趣的实战项目等一些小东西，本人学习 Python 有一段时间了，想学 Python 是因为它入门简单具有非常丰富的库，实现很多复杂的功能只需要直接调用库然后简单的几句代码就能实现想要的功能。同时同样的一个功能 C 要 1000 行代码，java 要 100 行   ，Python 只需要 10 行。同时 Python 还能干很多事 Web，爬虫，数据分析，运维等。我学 Python 的初衷就是为了能够用爬虫爬取自己想要的信息。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
