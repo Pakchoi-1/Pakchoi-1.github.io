@@ -270,6 +270,320 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Pakchoi-1.github.io/2019/07/17/esp8266快速上手/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pakchoi-1">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pakchoi!!">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/17/esp8266快速上手/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-17T00:55:42+08:00">
+                2019-07-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  220
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="ESP8266-Learning����Ӧ��"><a href="#ESP8266-Learning����Ӧ��" class="headerlink" title="ESP8266_Learning����Ӧ��"></a>ESP8266_Learning����Ӧ��</h1><p> ���ѧϰ��wifiģ���esp8266WiFiģ�� �����ܽ���һЩ�������ֵĽ̳�</p>
+<p>һ���ܰ���һЩ��ѧ��</p>
+<p>���Ա��Լ��Ժ�鿴��</p>
+<h3 id="����"><a href="#����" class="headerlink" title="����"></a>����</h3><p><a href="https://wiki.ai-thinker.com/_media/esp8266/docs/esp8266_series_modules_user_manual_cn.pdf" target="_blank" rel="noopener">������ο����ĵ�</a></p>
+<h3 id="�ϵ��������"><a href="#�ϵ��������" class="headerlink" title="�ϵ��������"></a>�ϵ��������</h3><p>һ����������ģ�����Ѿ���д���˹̼��ģ�����˵ģ�鵽���˺�û������������ǲ���Ҫ���չ̼�����������</p>
+<p>���Ʋ� <a href="http://bbs.ai-thinker.com/forum.php?mod=viewthread&amp;tid=8&amp;extra=page%3D1" target="_blank" rel="noopener">��¼�̳�</a></p>
+<p>���޵��Թ��������е����ſɿƼ����� <a href="https://wiki.ai-thinker.com/tools" target="_blank" rel="noopener">���������嵥</a></p>
+<blockquote>
+<p>AT-&gt;ok<br>AT+GMR-&gt;���ذ汾��Ϣ<br>AT+RST-&gt;��λ<br>AT+RESTORE-&gt;�ָ���������</p>
+<p><img src="C:\Users\Hasee\Desktop\esp8266_learn\image\��ʼ.png" alt></p>
+</blockquote>
+<h2 id="STAgʽ��AT-CWMODE-1��"><a href="#STAgʽ��AT-CWMODE-1��" class="headerlink" title="STAģʽ��AT+CWMODE=1��"></a>STAģʽ��AT+CWMODE=1��</h2><p>�������� STA��COM-WIFI STA�� ģʽ��ģ����Ϊ���� WIFI STA�� �������ӵ�������<br>�磬ʵ�ִ����������豸֮������ߣ�WIFI�� ����ת����������ģʽ�£�����Ӧ�ó�����<br>��ͬ���������� 3 ����ģʽ�� TCP �������� TCP �ͻ��ˣ� UDP </p>
+<p>��ʱ8266��ΪTCP������</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>ATָ��</th>
+<th>����</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AT+CWMODE=1</td>
+<td>STAģʽ</td>
+</tr>
+<tr>
+<td>AT+CWJAP_DEF=”AAAAA”,”12345678”</td>
+<td>���Ӷ���·������ ssid ��password</td>
+</tr>
+<tr>
+<td>AT+CIPMUX=1</td>
+<td>����������</td>
+</tr>
+<tr>
+<td>AT+CIPSERVER=1,8080</td>
+<td>�������������˿ں�Ϊ 8080</td>
+</tr>
+<tr>
+<td>AT+CIPSEND=0,25</td>
+<td>�� ID0 ���� 25 �ֽڵ�����</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<h2 id="APgʽ-AT-CWMODE-2"><a href="#APgʽ-AT-CWMODE-2" class="headerlink" title="APģʽ(AT+CWMODE=2)"></a>APģʽ(AT+CWMODE=2)</h2><p>b.ģ���server.<br>�������ƣ����ǿ��԰�ģ�����ó�server �ֻ����ó�client</p>
+<p>��ʱ8266��ΪTCP������</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>ATָ��</th>
+<th>����</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AT+CWMODE=2</td>
+<td>APģʽ   ��ģ���� TCP server��</td>
+</tr>
+<tr>
+<td>AT+CWSAP=”ESP8266”,”0123456789”,2,3</td>
+<td>����wifi��ESP8266��,���룬ͨ���ţ����ܷ�ʽ</td>
+</tr>
+<tr>
+<td>AT+CIPMUX=1</td>
+<td>����������</td>
+</tr>
+<tr>
+<td>AT+CIPSERVER=1,8080</td>
+<td>�������������˿ں�Ϊ 8080���ֻ�/�������Ӵ��ȵ㣩</td>
+</tr>
+<tr>
+<td>AT+CIPSEND=0,5</td>
+<td>�������ӵ� id ���������ݵĳ��ȣ����2048��</td>
+</tr>
+</tbody>
+</table>
+<p>ע��ģ��APģʽ  Ĭ�ϵ�IP��192.168.4.1 ������AT+CIFSR �鿴mac��ַ��IP</p>
+<p><img src="C:\Users\Hasee\Desktop\esp8266_learn\image\AP_1.png" alt="AP_ģ�������ģʽ"></p>
+<p><img src="C:\Users\Hasee\Desktop\esp8266_learn\image\AP_2.png" alt="����ATָ��"></p>
+</blockquote>
+<h2 id="AP-STAgʽ-AT-CWMODE-3"><a href="#AP-STAgʽ-AT-CWMODE-3" class="headerlink" title="AP+STAģʽ(AT+CWMODE=3)"></a>AP+STAģʽ(AT+CWMODE=3)</h2><p>a.ģ���tcp͸�������ó�server������͸����<br>���ȣ����ֻ����뵽һ��·�ɣ�����·�ɲ�Ҫ�� �������֡�<br>�������ǰ�8266���ó�client ���ֻ�����/���Կ���tcp server�����tcp��͸��</p>
+<p>��ʱģ�鹤����TCP �ͻ���ģʽ</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>ATָ��</th>
+<th>����</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AT+CWMODE=3</td>
+<td>AP+STAģʽ</td>
+</tr>
+<tr>
+<td>AT+CWJAP_DEF=”mm8”,”123456789”</td>
+<td>���Ӷ���·������ ssid ��password���ͻ�������wifi��������tcp sever ģʽ���ӣ�</td>
+</tr>
+<tr>
+<td>AT+CIPSTART=”TCP”,”192.168.43.41”,8080</td>
+<td>�ֻ�/���Ե�ip port</td>
+</tr>
+<tr>
+<td>AT+CIPMODE=1</td>
+<td>����͸��ģʽ���������� client ʱ֧�֣�</td>
+</tr>
+<tr>
+<td>AT+CIPSEND</td>
+<td>��ʼ��������</td>
+</tr>
+</tbody>
+</table>
+<p><img src="C:\Users\Hasee\Desktop\esp8266_learn\image\AP+STA_1.jpg" alt="TCP_sever �ֻ�/����client"></p>
+<p><img src="C:\Users\Hasee\Desktop\esp8266_learn\image\AP+STA_2.jpg" alt="����ATָ��"></p>
+</blockquote>
+<h3 id="���Ӱ��l�͸����"><a href="#���Ӱ��l�͸����" class="headerlink" title="���Ӱ��ſ�͸����"></a>���Ӱ��ſ�͸����</h3><p><a href="http://tt.ai-thinker.com:8000/ttcloud" target="_blank" rel="noopener">���ſ�͸���Ƶ�ַ</a></p>
+<table>
+<thead>
+<tr>
+<th>ATָ��</th>
+<th>����</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AT+CWMODE=1</td>
+<td>STAģʽ</td>
+</tr>
+<tr>
+<td>AT+CWJAP_DEF=”mm8”,”123456789”</td>
+<td>���Ӷ���·������ ssid ��password</td>
+</tr>
+<tr>
+<td>AT+CIPMUX=0</td>
+<td>������ģʽ</td>
+</tr>
+<tr>
+<td>AT+CIPMODE=1</td>
+<td>͸��ģʽ</td>
+</tr>
+<tr>
+<td>AT+CIPSTART=”TCP”,”22.114.122.174 “,37599</td>
+<td>Զ����sever IP���˿�</td>
+</tr>
+<tr>
+<td>AT+CIPSEND</td>
+<td>����͸��</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><img src="C:\Users\Hasee\Desktop\esp8266_learn\image\͸����.png" alt></p>
+</blockquote>
+<p>�����½�������ѧϰ</p>
+<p><a href="http://bbs.ai-thinker.com/forum.php?mod=viewthread&amp;t&amp;tid=15extra=page%3D1" target="_blank" rel="noopener">���Ĳο�����</a></p>
+<p><a href="https://wiki.ai-thinker.com/esp8266" target="_blank" rel="noopener">��Ҫ���Ҹ����������ο�</a></p>
+<p>——-������ͼƬ����Դ������������Ȩ����ϵ����ɾ��</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://Pakchoi-1.github.io/2019/04/10/Pakchoi-1's first blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -624,7 +938,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
