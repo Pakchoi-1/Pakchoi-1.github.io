@@ -118,7 +118,7 @@
 <meta property="og:image" content="https://pakchoi-1.github.io/2019/07/17/esp8266快速上手/img/AP+STA_1.jpg">
 <meta property="og:image" content="https://pakchoi-1.github.io/2019/07/17/esp8266快速上手/img/AP+STA_2.jpg">
 <meta property="og:image" content="https://pakchoi-1.github.io/2019/07/17/esp8266快速上手/img/透传云.png">
-<meta property="og:updated_time" content="2019-07-16T17:29:12.695Z">
+<meta property="og:updated_time" content="2019-07-16T17:35:48.350Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ESP8266_Learning快速上手">
 <meta name="twitter:description" content="ESP8266_Learning快速应用 最近学习了wifi模组的esp8266WiFi模块 这里总结了一些快速上手的教程 一是能帮助一些初学者 二以便自己以后查看。 接线按需求参考此文档 上电基本测试一般情况刚买的模组是已经烧写好了固件的，就是说模组到手了后没意外或别的需求是不需要重烧固件的如有需求 请移步 烧录教程 若无调试工具请自行到安信可科技下载 开发工具清单  AT-&amp;gt;okAT+G">
@@ -384,8 +384,8 @@
 <p>若无调试工具请自行到安信可科技下载 <a href="https://wiki.ai-thinker.com/tools" target="_blank" rel="noopener">开发工具清单</a></p>
 <blockquote>
 <p>AT-&gt;ok<br>AT+GMR-&gt;返回版本信息<br>AT+RST-&gt;复位<br>AT+RESTORE-&gt;恢复出厂设置</p>
-<p><img src="img/初始.png" alt="初始"></p>
 </blockquote>
+<p><img src="img/初始.png" alt="初始"></p>
 <h2 id="STA模式（AT-CWMODE-1）"><a href="#STA模式（AT-CWMODE-1）" class="headerlink" title="STA模式（AT+CWMODE=1）"></a>STA模式（AT+CWMODE=1）</h2><p>串口无线 STA（COM-WIFI STA） 模式，模块作为无线 WIFI STA， 用于连接到无线网<br>络，实现串口与其他设备之间的无线（WIFI） 数据转换互传。该模式下，根据应用场景的<br>不同，可以设置 3 个子模式： TCP 服务器、 TCP 客户端， UDP </p>
 <p>此时8266作为TCP服务器</p>
 <blockquote>
@@ -454,9 +454,9 @@
 </tbody>
 </table>
 <p>注：模组AP模式  默认的IP是192.168.4.1 可以用AT+CIFSR 查看mac地址和IP</p>
+</blockquote>
 <p><img src="img/AP_1.png" alt="AP_模块服务器模式"></p>
 <p><img src="img/AP_2.png" alt="串口AT指令"></p>
-</blockquote>
 <h2 id="AP-STA模式-AT-CWMODE-3"><a href="#AP-STA模式-AT-CWMODE-3" class="headerlink" title="AP+STA模式(AT+CWMODE=3)"></a>AP+STA模式(AT+CWMODE=3)</h2><p>a.模组的tcp透传（配置成server不能用透传）<br>首先，把手机接入到一个路由，建议路由不要用 中文名字。<br>这里我们把8266配置成client ，手机软件/电脑开启tcp server，完成tcp的透传</p>
 <p>此时模组工作在TCP 客户端模式</p>
 <blockquote>
@@ -490,9 +490,9 @@
 </tr>
 </tbody>
 </table>
+</blockquote>
 <p><img src="img/AP+STA_1.jpg" alt="TCP_sever 手机/电脑client"></p>
 <p><img src="img/AP+STA_2.jpg" alt="串口AT指令"></p>
-</blockquote>
 <h3 id="连接安信可透传云"><a href="#连接安信可透传云" class="headerlink" title="连接安信可透传云"></a>连接安信可透传云</h3><p><a href="http://tt.ai-thinker.com:8000/ttcloud" target="_blank" rel="noopener">安信可透传云地址</a></p>
 <table>
 <thead>
@@ -528,9 +528,7 @@
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p><img src="img/透传云.png" alt></p>
-</blockquote>
+<p><img src="img/透传云.png" alt="透传云"></p>
 <p>本文章仅供交流学习</p>
 <p><a href="http://bbs.ai-thinker.com/forum.php?mod=viewthread&amp;t&amp;tid=15extra=page%3D1" target="_blank" rel="noopener">本文参考文章</a></p>
 <p><a href="https://wiki.ai-thinker.com/esp8266" target="_blank" rel="noopener">若要查找更多的资料请参考</a></p>
